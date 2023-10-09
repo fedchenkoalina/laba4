@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    
+<script>
+  function MaximumDifference(arr, len)
+{
+    let min = arr[0];
+    let max = arr[0];
+    for (let i = 1; i < len; i++) {
+        min = Math.min(min, arr[i]);
+        max = Math.max(max, arr[i]);
+    }
+    return (max - min);
+}
+    let arr = [ 2, 1, 5, 3 ];
+    let len = arr.length;
+    console.log(arr, "Максимальная разница" ,MaximumDifference(arr, len));
+</script>
+
+<script>
+  let array = [1,2,3,3,3,4,5,6,6];
+  let uniqArr = [...new Set(array)];
+  console.log(uniqArr);
+</script>
+
+<script>
+  let list = [{isDone:true}, {isDone:false}, {isDone:true}];
+  const filteredList = list.filter(obj => obj.isDone === true);
+  console.log(filteredList);
+</script>
+
+<script>
+  function filtered(array, number) {
+      return array.filter(item => item > number);
+  }
+  const res = filtered([1, 4, 6, 3, 2], 2);
+
+  console.log(res);
+</script>
+
+<script>
+  const f =
+      [1, 4,
+        [34, 1, 20],
+         [6,
+            [6, 12, 8],
+             6]]
+  const flat = f.flat(Infinity)
+  console.log(flat)
+</script>
+
+<script>
+function find(a) {
+  let count = 0;
+  let Counts = {};
+  for (let num of a) {
+    if (Counts[-num]) {
+      count += numCounts[-num];
+    }
+    Counts[num] = Counts[num] ? Counts[num] + 1 : 1;
+  }
+  return count;
+}
+let a = [-1, 2, 4, 7, -4, 1, -2];
+console.log(find(a));
+</script>
+
+  </body>
+</html>

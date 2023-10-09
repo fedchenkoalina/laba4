@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- <script>
+    function* random(n, m) {
+      while (true) {
+        yield Math.floor(Math.random() * (m - n + 1)) + n;
+      }
+    }
+    let generator = random(1, 100);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    </script> -->
+
+
+
+    <!-- <script>
+    function* padovan() {
+      let a = 1, b = 1, c = 1;
+      while (true) {
+        yield a;
+        [a, b, c] = [b, c, a + b];
+      }
+    }
+
+    let generator = padovan();
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+    console.log(generator.next().value);
+
+    </script> -->
+
+
+    <!-- <script>
+    function* Ggenerator() {
+      let num = 2;
+
+      while (true) {
+        if (simple(num)) {
+          yield num;
+        }
+        num++;
+      }
+      }
+
+    function simple(num) {
+      for (let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+      return num > 1;
+      }
+
+      let generator = Ggenerator();
+      console.log(generator.next().value);
+      console.log(generator.next().value);
+      console.log(generator.next().value);
+    </script> -->
+
+    <script>
+
+
+    function numberOfOccurrences(string) {
+      const map = new Map();
+
+      for (let i = 0; i < string.length; i++) {
+        const char = string[i];
+
+        if (map.has(char)) {
+          map.set(char, map.get(char) + 1);
+        } else {
+          map.set(char, 1);
+        }
+      }
+
+      return map;
+      }
+
+      const string = "Добрый вечер";
+      const occurrences = numberOfOccurrences(string);
+
+      console.log(occurrences);
+
+    </script>
+  </body>
+</html>
